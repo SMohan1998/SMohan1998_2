@@ -121,7 +121,8 @@
     
     <!-- Hero Section: Main content and image -->
   <section class="flex flex-col-reverse lg:flex-row items-center mt-8 px-4 sm:px-8 lg:px-24 py-10 sm:py-16 lg:py-20 bg-[linear-gradient(to_bottom_right,_#083F9B_0%,_#7F56D9_100%)] text-white">
-      <!-- Left side text content -->
+    <!-- Left side text content and testimonial horizontally aligned -->
+    <div class="flex flex-col lg:flex-row flex-1 items-center lg:items-start w-full">
       <div class="flex-1 text-center lg:text-left">
         <p class="uppercase text-xs sm:text-sm tracking-widest">Successful coaches are visionaries</p>
         <h1 class="text-3xl sm:text-4xl md:text-5xl text-left font-bold my-4 leading-tight">
@@ -140,22 +141,24 @@
           <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-700 px-3 sm:px-4 py-1 sm:py-2 text-white text-xs sm:text-sm md:text-base rounded-full" onclick="console.log('Search clicked with input:', document.getElementById('searchInput').value)">Search</button>
         </div>
       </div>
-      <!-- Centered testimonial between left and right -->
-      <div class="flex flex-col items-center lg:items-end relative w-full max-w-xs aspect-[1/1] md:items-end mt-8 lg:mt-0">
-        <!-- Circular image wrapper -->
-        <div class="h-40 w-40 sm:h-60 sm:w-60 flex items-center justify-center">
-          <img src="images/brunette-woman-hugging-laptop 1.png" alt="Tutor" class="rounded-full object-cover w-full h-full">
+      <!-- Testimonial box: next to hero content -->
+      <div class="flex flex-col items-center justify-center lg:ml-8 my-6 lg:my-0 w-full lg:w-1/3">
+        <div class="bg-white bg-opacity-20 text-white p-4 rounded-lg w-full max-w-xs text-center relative flex">
+          <img src="images/hero quote.svg" class="hidden sm:block absolute left-0 top-0 h-full w-12 sm:w-16 object-contain" style="min-height: 100%;" alt="Quote">
+          <div class="flex flex-col justify-between h-full w-full pl-12 text-left">
+            <p class="font-semibold">Shyam</p>
+            <p class="mt-1">In a coaching role, you ask the questions and rely more on your staff who become the experts to provide the information.</p>
+            <p class="mt-2 text-blue-200 font-semibold text-lg">4.9</p>
+          </div>
         </div>
       </div>
-      <!-- Testimonial box: always visible and centered between left and right -->
-      <div class="flex flex-col items-center justify-center w-full lg:w-1/3 mx-auto my-6">
-        <div class="bg-white bg-opacity-20 text-white p-4 rounded-lg w-full max-w-xs text-center relative">
-          <img src="images/hero quote.svg" class="h-12 sm:h-16 mx-auto mb-2">
-          <p class="font-semibold">Shyam</p>
-          <p class="mt-1">In a coaching role, you ask the questions and rely more on your staff who become the experts to provide the information.</p>
-          <p class="mt-2 text-blue-200 font-semibold text-lg">4.9</p>
-        </div>
+    </div>
+    <!-- Right side: Tutor image stays at right end -->
+    <div class="flex flex-col items-center lg:items-end relative w-full max-w-xs aspect-[1/1] md:items-end mt-8 lg:mt-0">
+      <div class="h-40 w-40 sm:h-60 sm:w-60 flex items-center justify-center">
+        <img src="images/brunette-woman-hugging-laptop 1.png" alt="Tutor" class="rounded-full object-cover w-full h-full">
       </div>
+    </div>
     </section>
 
     <!-- Section with logos of partner companies -->
